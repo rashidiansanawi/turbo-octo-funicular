@@ -143,6 +143,22 @@
                             </ul>
                         </div>
                     </div>
+
+                    <!-- The Final Destination (The Letter) -->
+                    <div class="day-card reveal slide-up destination-special" id="final-stop">
+                        <div class="day-header">
+                            <span class="day-number">Final Destination</span>
+                            <h3>The Heart's Destination</h3>
+                        </div>
+                        <div class="day-content text-center">
+                            <p class="final-message">Our road trip reaches its peak here. But our journey together is
+                                just beginning.</p>
+                            <div class="envelope-trigger" id="open-letter-btn">
+                                <span class="envelope-icon">📩</span>
+                                <p>Click to open my Heart</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="itinerary-tips reveal fade-in">
@@ -152,6 +168,36 @@
                         <li>Music: A curated 'Fathin AMJ' playlist for the long stretches.</li>
                         <li>Must Bring: Your camera, your favorite snacks, and your most comfortable sandals.</li>
                     </ul>
+                </div>
+
+                <!-- Relationship Quirks Section -->
+                <section class="quirks-section reveal slide-up">
+                    <div class="quirks-header">
+                        <p class="anniversary-label">The 5-Year Tour</p>
+                        <h3>Our Tour Stats</h3>
+                    </div>
+                    <div class="quirks-grid">
+                        <div class="quirk-card">
+                            <span class="quirk-icon">🚗</span>
+                            <h5>1,825 Days</h5>
+                            <p>Of being each other's favorite road trip partner.</p>
+                        </div>
+                        <div class="quirk-card">
+                            <span class="quirk-icon">🎵</span>
+                            <h5>One Muse</h5>
+                            <p>The soulful voice that makes every mile shorter.</p>
+                        </div>
+                        <div class="quirk-card">
+                            <span class="quirk-icon">☕</span>
+                            <h5>Countless Stops</h5>
+                            <p>For coffee, snacks, and "look at that view!" moments.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="letter-reveal-box reveal fade-in">
+                    <p>There is one more thing...</p>
+                    <button id="open-letter-btn" class="btn btn-primary">Read My Heart</button>
                 </div>
 
                 <footer class="itinerary-footer reveal fade-in">
@@ -164,6 +210,30 @@
                 </footer>
             </div>
         </section>
+
+        <!-- Anniversary Letter Overlay -->
+        <div id="letter-overlay" class="overlay hidden">
+            <div class="letter-container">
+                <div class="letter-paper">
+                    <div class="letter-content">
+                        <h3>A Letter to My Muse, Fathin</h3>
+                        <p>To my dearest Fathin Khairunnisa,</p>
+                        <p>Five years.</p>
+                        <p>They say time flies when you’re in tune, and with you, every day has felt like a perfect
+                            melody. From our quiet moments in Brunei to the high notes of your career, and now to this
+                            long, winding road toward the Sabah stars—I wouldn’t want to be in the driver’s seat with
+                            anyone else but you in the passenger side.</p>
+                        <p>As we cross the border today, I’m reminded that five years isn’t just a milestone; it’s a
+                            beautiful album we’ve written together, one day at a time.</p>
+                        <p>Thank you for being my anchor when the tides are high at Tempurung, and my north star when
+                            the night is dark.</p>
+                        <p>Happy Anniversary, Sayang.</p>
+                        <p class="signature">Always yours,<br>Your Favorite Driver</p>
+                    </div>
+                </div>
+            </div>
+            <button id="close-letter" class="close-btn">&times;</button>
+        </div>
     </main>
 
     <script src="script.js"></script>
