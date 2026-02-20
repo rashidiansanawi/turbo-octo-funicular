@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 5th Anniversary, Fathin Khairunnisa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="loader" class="loader-wrapper">
+        <div class="loader-content">
+            <span class="loader-text">Loading a special surprise...</span>
+        </div>
+    </div>
+
+    <main id="main-content">
+        <!-- Landing Section -->
+        <section id="landing" class="hero-section">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <p class="anniversary-label">5 Years of Us</p>
+                <h1 class="hero-title">Happy Anniversary,<br><span class="highlight">Fathin Khairunnisa</span></h1>
+                <p class="hero-subtitle">Something special is waiting for you...</p>
+                <button id="surprise-btn" class="btn btn-primary">Reveal Surprise</button>
+            </div>
+        </section>
+
+        <!-- Golden Ticket Overlay -->
+        <div id="ticket-overlay" class="overlay hidden">
+            <div class="ticket-container">
+                <div class="ticket">
+                    <div class="ticket-inner">
+                        <div class="ticket-visual">
+                            <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=1000&auto=format&fit=crop"
+                                alt="Golden Ticket" class="ticket-img">
+                            <div class="ticket-stamp">Sabah 2026</div>
+                        </div>
+                        <div class="ticket-details">
+                            <h2>The Road Trip of a Lifetime</h2>
+                            <p class="destination">Destination: Kuala Penyu & Kota Kinabalu, Sabah</p>
+                            <p class="dates">Dates: Mid-May 2026</p>
+                            <button id="view-itinerary-btn" class="btn btn-secondary">Explore the Journey</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="close-ticket" class="close-btn">&times;</button>
+        </div>
+
+        <!-- Itinerary Section (Initially Hidden) -->
+        <section id="itinerary" class="itinerary-section hidden">
+            <div class="container">
+                <header class="itinerary-header">
+                    <h2>Our 3-Day Adventure</h2>
+                    <p>3 Days • 1 Car • Endless Memories</p>
+                </header>
+
+                <div class="timeline">
+                    <!-- Day 1 & 2 -->
+                    <div class="day-card" id="day-1-2">
+                        <div class="day-header">
+                            <span class="day-number">Day 1 & 2</span>
+                            <h3>Kuala Penyu Retreat</h3>
+                        </div>
+                        <div class="day-content">
+                            <div class="location-info">
+                                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1000&auto=format&fit=crop"
+                                    alt="Tempurung Seaside Lodge" class="location-img">
+                                <div>
+                                    <h4>Tempurung Seaside Lodge</h4>
+                                    <p>Our quiet escape by the sea. Think white sands, crashing waves, and nothing but
+                                        nature.</p>
+                                </div>
+                            </div>
+                            <ul class="activities">
+                                <li>✨ <strong>Stargazing:</strong> We'll find the clearest skies in Kuala Penyu for a
+                                    night under the stars.</li>
+                                <li>🎣 <strong>Nature & Relaxation:</strong> Exploring the seaside lodge and maybe
+                                    trying some fishing by the coast.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Day 3 -->
+                    <div class="day-card" id="day-3">
+                        <div class="day-header">
+                            <span class="day-number">Day 3</span>
+                            <h3>KK City Vibes</h3>
+                        </div>
+                        <div class="day-content">
+                            <div class="location-info">
+                                <img src="https://images.unsplash.com/photo-1596422846543-75c6fc18a593?q=80&w=1000&auto=format&fit=crop"
+                                    alt="Kota Kinabalu" class="location-img">
+                                <div>
+                                    <h4>Kota Kinabalu City</h4>
+                                    <p>From the calm of the beach to the vibrant heart of Sabah's capital.</p>
+                                </div>
+                            </div>
+                            <ul class="activities">
+                                <li>🏛️ <strong>Museums & Culture:</strong> Immersing ourselves in local history.</li>
+                                <li>🛍️ <strong>Shopping:</strong> Finding treasures in the city's best spots.</li>
+                                <li>🍽️ <strong>Farewell Dinner:</strong> A special meal to wrap up our trip.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <footer class="itinerary-footer">
+                    <p>I can't wait to make more memories with you.</p>
+                    <div class="music-note">
+                        <img src="https://images.unsplash.com/photo-1493225255756-d9584f8606e9?q=80&w=1000&auto=format&fit=crop"
+                            alt="Music" class="music-icon">
+                        <p>Soundtrack: Inspired by the soulful voice of <strong>Fathin AMJ</strong></p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
