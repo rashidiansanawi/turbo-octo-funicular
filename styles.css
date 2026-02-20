@@ -379,6 +379,47 @@ h3,
     }
 }
 
+/* Narrative Styles */
+.location-description {
+    margin-bottom: 2rem;
+    font-style: italic;
+    color: var(--teak-wood);
+    font-size: 1.1rem;
+    border-left: 3px solid var(--sandy-beige);
+    padding-left: 1.5rem;
+}
+
+.itinerary-tips {
+    background: var(--forest-green);
+    color: var(--sandy-beige);
+    padding: 3rem;
+    border-radius: 20px;
+    margin-top: 4rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.itinerary-tips h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.itinerary-tips ul {
+    list-style: none;
+}
+
+.itinerary-tips li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.itinerary-tips li::before {
+    content: "📍";
+}
+
 /* V2 Animations */
 .reveal {
     opacity: 0;
