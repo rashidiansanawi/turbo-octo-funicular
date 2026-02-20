@@ -1,0 +1,462 @@
+/* ================================
+   PLANNER PAGE — planner.css
+   ================================ */
+
+.planner-body {
+    background-color: #f7f4ee;
+    background-image:
+        radial-gradient(circle at 20% 30%, rgba(45, 79, 30, 0.04) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(166, 124, 82, 0.06) 0%, transparent 50%);
+    min-height: 100vh;
+}
+
+/* ---- Nav ---- */
+.planner-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--forest-green);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nav-back {
+    color: var(--sandy-beige);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: var(--transition-mid);
+}
+
+.nav-back:hover {
+    color: white;
+    transform: translateX(-4px);
+    display: inline-block;
+}
+
+.nav-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+}
+
+.nav-trip {
+    font-size: 0.85rem;
+    color: var(--sandy-beige);
+    opacity: 0.8;
+}
+
+/* ---- Header ---- */
+.planner-header {
+    background: linear-gradient(135deg, var(--forest-green), #1e3d13);
+    color: white;
+    padding: 5rem 2rem 4rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.planner-header::after {
+    content: "🌿";
+    position: absolute;
+    font-size: 8rem;
+    opacity: 0.08;
+    bottom: -1rem;
+    right: 5%;
+    pointer-events: none;
+}
+
+.planner-header-inner {
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.planner-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin: 1rem 0;
+}
+
+.planner-subtitle {
+    font-size: 1.1rem;
+    color: var(--sandy-beige);
+    opacity: 0.9;
+    font-style: italic;
+    line-height: 1.7;
+}
+
+/* ---- Main Grid ---- */
+.planner-main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.planner-grid {
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.planner-section {
+    background: white;
+    border-radius: 24px;
+    padding: 3rem;
+    box-shadow: 0 8px 40px rgba(45, 79, 30, 0.07);
+}
+
+.section-title-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.section-icon {
+    font-size: 2rem;
+}
+
+.section-title-row h2 {
+    font-size: 2.2rem;
+    color: var(--forest-green);
+}
+
+.section-subtitle {
+    color: #777;
+    margin-bottom: 2.5rem;
+    font-size: 0.95rem;
+    border-left: 3px solid var(--sandy-beige);
+    padding-left: 1rem;
+}
+
+/* ---- Packing Cards ---- */
+.pack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.pack-card {
+    background: var(--off-white);
+    border-radius: 16px;
+    padding: 2rem;
+    border-top: 4px solid var(--sandy-beige);
+    transition: var(--transition-mid);
+}
+
+.pack-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.pack-card.highlight-card {
+    border-top-color: var(--teak-wood);
+    background: linear-gradient(to bottom right, #fff8f0, var(--off-white));
+}
+
+.pack-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.pack-card-header span {
+    font-size: 1.8rem;
+}
+
+.pack-card-header h3 {
+    font-size: 1.2rem;
+    color: var(--forest-green);
+    font-family: 'Playfair Display', serif;
+}
+
+/* ---- Checklist ---- */
+.checklist {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.checklist li label {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.5;
+    transition: color 0.2s;
+}
+
+.checklist li label:hover {
+    color: var(--forest-green);
+}
+
+.checklist input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    accent-color: var(--forest-green);
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.checklist input[type="checkbox"]:checked+* {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+/* checked state on the whole label */
+.checklist li label:has(input:checked) {
+    text-decoration: line-through;
+    color: #bbb;
+}
+
+/* ---- Budget Cards ---- */
+.budget-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.budget-card {
+    background: var(--off-white);
+    border-radius: 16px;
+    padding: 2rem;
+    border-top: 4px solid var(--sandy-beige);
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.budget-card.highlight-card {
+    border-top-color: var(--teak-wood);
+}
+
+.budget-icon {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.budget-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--forest-green);
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.budget-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-bottom: 1.2rem;
+    flex: 1;
+}
+
+.budget-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    font-size: 0.88rem;
+    color: #555;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px dashed #e8e0d0;
+}
+
+.budget-row:last-child {
+    border-bottom: none;
+}
+
+.budget-amount {
+    font-weight: 600;
+    color: var(--teak-wood);
+    white-space: nowrap;
+    text-align: right;
+    min-width: 100px;
+}
+
+.budget-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--forest-green);
+    color: white;
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: auto;
+}
+
+.budget-total-amount {
+    color: var(--sandy-beige);
+}
+
+.budget-note {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 0.8rem;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+/* ---- Grand Total ---- */
+.grand-total-card {
+    background: linear-gradient(135deg, var(--forest-green), #1e3d13);
+    border-radius: 20px;
+    padding: 2.5rem;
+    color: white;
+}
+
+.grand-total-inner h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: var(--sandy-beige);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.grand-total-row {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.grand-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+    min-width: 160px;
+    text-align: center;
+}
+
+.grand-label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--sandy-beige);
+    opacity: 0.8;
+}
+
+.grand-value {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.grand-value.low {
+    color: #a8e6a3;
+}
+
+.grand-value.mid {
+    color: var(--sandy-beige);
+}
+
+.grand-value.high {
+    color: #f5c57a;
+}
+
+.grand-note {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.55);
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.grand-divider {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 2rem;
+    align-self: center;
+}
+
+.grand-footer {
+    text-align: center;
+    font-size: 0.78rem;
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1rem;
+}
+
+/* ---- Quick Tips ---- */
+.tips-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.tip-pill {
+    background: var(--sandy-beige);
+    padding: 0.7rem 1.2rem;
+    border-radius: 50px;
+    font-size: 0.88rem;
+    color: #444;
+    transition: var(--transition-mid);
+    cursor: default;
+    border: 1px solid rgba(166, 124, 82, 0.2);
+}
+
+.tip-pill:hover {
+    background: var(--teak-wood);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* ---- Footer ---- */
+.planner-footer {
+    text-align: center;
+    padding: 4rem 2rem;
+    border-top: 1px solid #e8e0d0;
+    color: #888;
+}
+
+.planner-footer p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+    color: var(--teak-wood);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+    .planner-nav {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+        padding: 0.8rem 1rem;
+    }
+
+    .pack-grid,
+    .budget-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grand-total-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grand-divider {
+        display: none;
+    }
+
+    .planner-section {
+        padding: 2rem 1.5rem;
+    }
+}
