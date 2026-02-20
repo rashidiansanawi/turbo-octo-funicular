@@ -805,3 +805,43 @@ h3,
         font-size: 3rem;
     }
 }
+
+/* ---- Floating Planner Button (FAB) ---- */
+.planner-fab {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 500;
+    background: var(--teak-wood);
+    color: white;
+    text-decoration: none;
+    padding: 0.9rem 1.4rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    transition: var(--transition-mid);
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.planner-fab:hover {
+    background: var(--forest-green);
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .planner-fab span {
+        display: none;
+    }
+
+    .planner-fab {
+        padding: 1rem 1.2rem;
+        font-size: 1.2rem;
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
+}
