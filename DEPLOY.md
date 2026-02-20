@@ -19,5 +19,10 @@ git push origin main
 6. Set your **Domain** (e.g., `https://anniversary.yourdomain.com`).
 7. Click **Deploy**.
 
-## Why Docker?
-I've added a `Dockerfile` and `nginx.conf` because it handles the static assets and routing more reliably than a standard "Static" build pack, and it allows for easier caching of your beautiful nature photos.
+## ♻️ Automatic Updates
+Yes! Once this is set up, Coolify will automatically update your website every time you push new changes to GitHub.
+
+- If you connected via the **Coolify GitHub App**, it's fully automatic.
+- If you used a **Public Repo URL**, you might need to click "Check for Updates" in Coolify or manually trigger a redeploy when you make changes.
+
+Now, any time you want to tweak a photo or add an inside joke, just `git push` and your server will handle the rest!
