@@ -20,25 +20,32 @@
         </div>
     </div>
 
+    <!-- Decorative Elements -->
+    <div class="nature-decor" style="top: 10%; left: 5%; font-size: 2rem;">🌿</div>
+    <div class="nature-decor" style="top: 20%; right: 10%; font-size: 1.5rem; animation-delay: 1s;">✨</div>
+    <div class="nature-decor" style="bottom: 15%; left: 8%; font-size: 2.5rem; animation-delay: 2s;">🌴</div>
+    <div class="nature-decor" style="bottom: 10%; right: 5%; font-size: 2rem; animation-delay: 3s;">⭐</div>
+
     <main id="main-content">
         <!-- Landing Section -->
         <section id="landing" class="hero-section">
             <div class="hero-bg"></div>
             <div class="hero-content">
-                <p class="anniversary-label">5 Years of Us</p>
-                <h1 class="hero-title">Happy Anniversary,<br><span class="highlight">Fathin Khairunnisa</span></h1>
-                <p class="hero-subtitle">Something special is waiting for you...</p>
-                <button id="surprise-btn" class="btn btn-primary">Reveal Surprise</button>
+                <p class="anniversary-label reveal fade-in">5 Years of Us</p>
+                <h1 class="hero-title reveal slide-up">Happy Anniversary,<br><span class="highlight">Fathin
+                        Khairunnisa</span></h1>
+                <p class="hero-subtitle reveal fade-in delay-1">Something special is waiting for you...</p>
+                <button id="surprise-btn" class="btn btn-primary reveal fade-in delay-2">Reveal Surprise</button>
             </div>
         </section>
 
         <!-- Golden Ticket Overlay -->
         <div id="ticket-overlay" class="overlay hidden">
             <div class="ticket-container">
-                <div class="ticket">
+                <div class="ticket shimmer-effect">
                     <div class="ticket-inner">
                         <div class="ticket-visual">
-                            <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=1000&auto=format&fit=crop"
+                            <img src="https://images.unsplash.com/photo-1634128221889-82ed6efdfac3?q=80&w=1000&auto=format&fit=crop"
                                 alt="Golden Ticket" class="ticket-img">
                             <div class="ticket-stamp">Sabah 2026</div>
                         </div>
@@ -50,28 +57,28 @@
                         </div>
                     </div>
                 </div>
+                <button id="close-ticket" class="close-btn">&times;</button>
             </div>
-            <button id="close-ticket" class="close-btn">&times;</button>
         </div>
 
         <!-- Itinerary Section (Initially Hidden) -->
         <section id="itinerary" class="itinerary-section hidden">
             <div class="container">
-                <header class="itinerary-header">
+                <header class="itinerary-header reveal slide-up">
                     <h2>Our 3-Day Adventure</h2>
                     <p>3 Days • 1 Car • Endless Memories</p>
                 </header>
 
                 <div class="timeline">
                     <!-- Day 1 & 2 -->
-                    <div class="day-card" id="day-1-2">
+                    <div class="day-card reveal slide-left" id="day-1-2">
                         <div class="day-header">
                             <span class="day-number">Day 1 & 2</span>
                             <h3>Kuala Penyu Retreat</h3>
                         </div>
                         <div class="day-content">
                             <div class="location-info">
-                                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1000&auto=format&fit=crop"
+                                <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?q=80&w=1000&auto=format&fit=crop"
                                     alt="Tempurung Seaside Lodge" class="location-img">
                                 <div>
                                     <h4>Tempurung Seaside Lodge</h4>
@@ -89,7 +96,7 @@
                     </div>
 
                     <!-- Day 3 -->
-                    <div class="day-card" id="day-3">
+                    <div class="day-card reveal slide-right" id="day-3">
                         <div class="day-header">
                             <span class="day-number">Day 3</span>
                             <h3>KK City Vibes</h3>
@@ -112,10 +119,10 @@
                     </div>
                 </div>
 
-                <footer class="itinerary-footer">
+                <footer class="itinerary-footer reveal fade-in">
                     <p>I can't wait to make more memories with you.</p>
                     <div class="music-note">
-                        <img src="https://images.unsplash.com/photo-1493225255756-d9584f8606e9?q=80&w=1000&auto=format&fit=crop"
+                        <img src="https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?q=80&w=1000&auto=format&fit=crop"
                             alt="Music" class="music-icon">
                         <p>Soundtrack: Inspired by the soulful voice of <strong>Fathin AMJ</strong></p>
                     </div>

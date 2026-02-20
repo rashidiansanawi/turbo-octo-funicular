@@ -51,4 +51,25 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 100);
         }, 400);
     });
+
+    // 5. Scroll Reveal Logic
+    const revealElements = document.querySelectorAll('.reveal');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // Initial reveal for hero items after loader
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            const heroReveals = document.querySelectorAll('#landing .reveal');
+            heroReveals.forEach(el => el.classList.add('visible'));
+        }, 2500); // After loader settles
+    });
 });
