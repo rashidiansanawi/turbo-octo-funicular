@@ -848,3 +848,78 @@ h3,
         right: 1.5rem;
     }
 }
+
+/* Quran Section Styles */
+.quran-section {
+    padding: 6rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.quran-header {
+    margin-bottom: 4rem;
+}
+
+.quran-header h3 {
+    font-size: 3rem;
+    color: var(--forest-green);
+    margin-bottom: 1rem;
+}
+
+.quran-intro {
+    font-style: italic;
+    color: var(--teak-wood);
+    font-size: 1.1rem;
+}
+
+.quran-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.quran-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid var(--sandy-beige);
+    transition: var(--transition-mid);
+}
+
+.quran-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.quran-arabic {
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    color: var(--forest-green);
+    margin-bottom: 2rem;
+    direction: rtl;
+    line-height: 2;
+}
+
+.quran-translation {
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: var(--dark-text);
+    line-height: 1.8;
+}
+
+.quran-reflection {
+    font-family: 'Caveat', cursive;
+    font-size: 1.4rem;
+    color: var(--teak-wood);
+    margin-bottom: 1.5rem;
+}
+
+.quran-ref {
+    font-size: 0.9rem;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
